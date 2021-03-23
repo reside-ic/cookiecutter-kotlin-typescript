@@ -1,0 +1,13 @@
+*
+!gradlew
+!gradle/
+!settings.gradle
+!gradle.properties
+!config/
+!app/static
+app/static/node_modules/
+app/static/coverage/
+!app/build.gradle.kts
+!app/src
+app/src/main/resources/config.properties
+!codecov.yml

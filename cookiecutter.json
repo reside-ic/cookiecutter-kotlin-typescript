@@ -1,0 +1,12 @@
+{
+  "name": "XYZ",
+  "repo_name": "{{ cookiecutter.name | lower }}",
+  "package": "org.imperial.mrc.{{ cookiecutter.repo_name | replace('-', '') | replace('_', '') }}",
+  "package_path": "{{ cookiecutter.package | replace('.', '/') }}",
+  "docker_image": "mrcide/{{ cookiecutter.repo_name | replace('-', '') | replace('_', '') }}",
+  "_copy_without_render": [
+    "src/gradlew.bat",
+    "src/app/static/src/components/*.vue",
+    "src/app/static/src/views/*.vue"
+  ]
+}
