@@ -20,7 +20,7 @@ COPY . .
 
 FROM build AS test
 
-RUN ./gradlew :app:detektMain :app:test :app:jacocoTestReport --quiet --no-daemon
+RUN ./gradlew :app:detektMain :app:test :app:jacocoTestReport --no-daemon
 RUN npm run lint --prefix=app/static/ && npm run test:unit --prefix=app/static/
 ARG CI
 ARG BUILDKITE_BUILD_NUMBER
