@@ -1,6 +1,6 @@
 # cookiecutter-kotlin-typescript
 
-![main workflow status](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
+![main workflow status](https://github.com/reside-ic/cookiecutter-kotlin-typescript/actions/workflows/main.yml/badge.svg)
 
 ## Contents
 
