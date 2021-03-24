@@ -1,5 +1,7 @@
 # cookiecutter-kotlin-typescript
 
+![main workflow status](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
+
 ## Contents
 
 - Kotlin, Spring Boot, Fuel
