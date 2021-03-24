@@ -28,7 +28,7 @@ ARG BUILDKITE_BUILD_URL
 ARG BUILDKITE_COMMIT
 ARG BUILDKITE_BRANCH
 ARG BUILDKITE_PROJECT_SLUG
-RUN if [ $CI ] ; then codecov ; fi
+RUN if [ $BUILDKITE ] ; then codecov ; fi
 
 FROM build AS dist
 
