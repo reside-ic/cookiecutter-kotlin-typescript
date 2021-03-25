@@ -12,10 +12,11 @@
 
 ## Instructions
 
-To create a new project run the following and move the new folder somewhere, push it to GitHub etc (no need to clone
-this repo first):
+To create a new project run the following (no need to clone this repo first):
 
 ```shell
 pip install cookiecutter
 cookiecutter gh:reside-ic/cookiecutter-kotlin-typescript
 ```
+
+Then move the new folder somewhere, push it to GitHub, add a licence etc
