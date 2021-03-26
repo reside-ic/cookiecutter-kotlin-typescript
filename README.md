@@ -4,7 +4,7 @@
 
 ## Contents
 
-- Kotlin, Spring Boot, Fuel
+- Kotlin, Spring Boot, Fuel, Logstash Logback Encoder
     - Detekt, JUnit, mockito-kotlin, JaCoCo
 - Vue 3, Vuex, Vue Router, Axios, BootstrapVue
     - TypeScript, Babel, ESLint, Jest, Node-sass (via Vue CLI)

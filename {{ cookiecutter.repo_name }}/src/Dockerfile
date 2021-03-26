@@ -38,4 +38,4 @@ RUN tar xf app/build/distributions/app-boot.tar -C /
 FROM openjdk:8u282-jre-slim
 
 COPY --from=dist /app-boot /app-boot
-ENTRYPOINT ["/app-boot/bin/app"]
+ENTRYPOINT ["/app-boot/bin/app", "--spring.profiles.active=prod"]

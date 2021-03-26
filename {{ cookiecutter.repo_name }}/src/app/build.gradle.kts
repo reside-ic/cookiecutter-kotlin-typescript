@@ -17,6 +17,7 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("com.github.kittinunf.fuel:fuel:2.3.1")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
+    implementation("net.logstash.logback:logstash-logback-encoder:6.6")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("com.nhaarman.mockitokotlin2:mockito-kotlin:2.2.0")
     developmentOnly("org.springframework.boot:spring-boot-devtools")
