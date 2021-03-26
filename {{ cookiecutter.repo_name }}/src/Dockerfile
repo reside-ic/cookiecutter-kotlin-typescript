@@ -22,12 +22,13 @@ FROM build AS test
 
 RUN ./gradlew :app:detektMain :app:test :app:jacocoTestReport --no-daemon
 RUN npm run lint --prefix=app/static/ && npm run test:unit --prefix=app/static/
-ARG CI
-ARG BUILDKITE_BUILD_NUMBER
-ARG BUILDKITE_BUILD_URL
-ARG BUILDKITE_COMMIT
+ARG BUILDKITE
 ARG BUILDKITE_BRANCH
+ARG BUILDKITE_BUILD_NUMBER
+ARG BUILDKITE_JOB_ID
+ARG BUILDKITE_BUILD_URL
 ARG BUILDKITE_PROJECT_SLUG
+ARG BUILDKITE_COMMIT
 RUN if [ $BUILDKITE ] ; then codecov ; fi
 
 FROM build AS dist

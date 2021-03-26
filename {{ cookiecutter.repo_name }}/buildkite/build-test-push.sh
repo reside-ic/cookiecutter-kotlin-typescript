@@ -17,7 +17,7 @@ GIT_BRANCH=${GIT_BRANCH//\//-}
 IMAGE_NAME={{ cookiecutter.docker_image }}
 
 docker build \
-  --build-arg GIT_BRANCH --build-arg GIT_COMMIT --build-arg CI \
+  --build-arg BUILDKITE --build-arg BUILDKITE_BRANCH --build-arg BUILDKITE_BUILD_NUMBER --build-arg BUILDKITE_JOB_ID --build-arg BUILDKITE_BUILD_URL --build-arg BUILDKITE_PROJECT_SLUG --build-arg BUILDKITE_COMMIT \
   --tag "$IMAGE_NAME:$GIT_BRANCH" --tag "$IMAGE_NAME:$GIT_COMMIT" \
   "$HERE"/../src/
 
