@@ -19,4 +19,8 @@ pip install cookiecutter
 cookiecutter gh:reside-ic/cookiecutter-kotlin-typescript
 ```
 
-Then move the new folder somewhere, push it to GitHub, add a licence etc
+Then:
+
+- Move the new folder somewhere and push it to GitHub
+- Add a licence
+- Make Codecov token accessible to Buildkite agents
